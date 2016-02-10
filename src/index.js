@@ -5,6 +5,7 @@ import YTSearch from 'youtube-api-search';
 // Components
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
+import VideoDetail from './components/video_detail';
 
 // Google YouTube API Key
 import { API_KEY } from '../API_KEY';
@@ -15,10 +16,14 @@ class App extends Component {
 
     this.state = {
       videos: [],
+      selectedVideo: null,
     };
 
     YTSearch({ key: API_KEY, term: 'Snowboarding' }, videos => {
-      this.setState({ videos });
+      this.setState({
+        videos: videos,
+        selectedVideo: videos[0]
+      });
     });
   }
 
@@ -26,7 +31,10 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
-        <VideoList videos={this.state.videos} />
+        <VideoDetail video={this.state.selectedVideo} />
+        <VideoList
+          onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
+          videos={this.state.videos} />
       </div>
     );
   }
