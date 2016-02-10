@@ -1,0 +1,36 @@
+{
+  "name": "reactube",
+  "version": "1.0.0",
+  "description": "Simple video player app built w/ React + Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinhoernig/reactube.git"
+  },
+  "author": "Colin Hoernig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colinhoernig/reactube/issues"
+  },
+  "homepage": "https://github.com/colinhoernig/reactube#readme",
+  "devDependencies": {
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-preset-stage-1": "^6.5.0",
+    "lodash": "^4.3.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.4.0",
+    "redux": "^3.3.1"
+  }
+}
