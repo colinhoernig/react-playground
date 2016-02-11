@@ -1,5 +1,5 @@
 # reactube
-Simple video player app built w/ React + Redux
+Simple video player app built w/ React + Redux, Webpack, ES6, and the YouTube Data API.
 
 ### Setup
 Create API_KEY.js in the root directory and export your YouTube Search API key:
