@@ -7,4 +7,4 @@ related libraries and technologies ([Redux](https://github.com/rackt/redux),
 ---
 
 ### [Reactube](reactube/)
-Simple video player app built w/ React + Redux, Webpack, ES6, and the YouTube Data API.
+Simple video player app built w/ React, Webpack, ES6, and the YouTube Data API.
