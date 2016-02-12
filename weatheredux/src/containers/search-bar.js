@@ -20,6 +20,10 @@ class SearchBar extends Component {
   onFormSubmit(event) {
     event.preventDefault();
 
+    if (!this.state.term) {
+      return;
+    }
+
     // fetchWeather action dispatch available on this.props
     // because of mapDispatchToProps and connect
     this.props.fetchWeather(this.state.term);
